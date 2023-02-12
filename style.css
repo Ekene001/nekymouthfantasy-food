@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=barricada&display=swap');
+
+:root{
+	--red: #c10909;
+}
+*{	
+    font-family: 'barricada-pro', serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: all 0.2s linear;
+}
+
+*::selection{
+	background: var(--red);
+	color: #fff;
+}
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding: 6rem;
+}
+body{
+	background-color: rgb(15, 7, 0);
+}
+
+section{
+	padding: 2rem 9%;
+}
+.heading{
+	text-align: center;
+	font-size: 4.5rem;
+	padding: 4rem;
+	color: #fff;
+	position: relative;
+}
+.heading span{
+	color: var(--red);
+	font-weight: bold;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: rgb(26, 14, 1);
+	padding: 2rem 6rem;
+	box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header h3{
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+header .navbar a{
+	font-size: 2rem;
+	margin-left: 2rem;
+	color: #fff;
+	text-decoration: none;
+}
+header .navbar a:hover{
+	color: var(--red);
+	
+}
+#menu-bar{
+	font-size: 3rem;
+	cursor: pointer;
+	color: #666;
+	border: 0.1rem solid #666;
+	border-radius: 0.3rem;
+	padding: 0.5rem 1.5rem;
+	display: none;
+}
+.home{
+	padding-top: 10rem;
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(66, 65, 65, 0.459),rgba(95, 91, 91, 0.425)), url(images/food/neky2.jpg);
+	background-position: center;
+	background-size: cover;
+	left: 0;
+	right: 0%;
+	justify-content: center;
+	align-items: start;
+}
+.home .content{
+	margin: 20rem 0;
+	position: absolute;
+	text-align: center;
+	padding: 1.5rem;
+	
+}
+.home .content h3{
+	font-size: 7rem;
+	padding: 1.5rem 0;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+.home .content p{
+	display: inline-block;
+	font-size: 3.5rem;
+	padding: 0 2rem;
+	color: black;
+	font-weight: 550;
+	text-transform: capitalize;
+	background-color: #fff;
+	border-radius: 1.5rem 2rem;
+}
+/* pictures*/
+
+.pictures{
+	margin: 0%;
+	background-color: rgb(238, 227, 198);
+	width: 100%;
+	position: relative;
+}
+.pictures .ok-box{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	gap: 1.5rem;
+}
+.pictures .ok-box .row{
+	width: 100%;
+	height: 100%;
+}
+.pictures .ok-box .row .contains{
+	flex: 1 1 20rem;
+	padding: 3.5rem 10px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+.pictures .ok-box .row .contains img{
+	width: 100%;
+	height: 65rem;
+	border-radius: 2.5rem;
+	object-fit: cover;
+	overflow: hidden;
+	border: 1rem solid rgb(56, 42, 22);
+}
+
+.pictures p{
+	padding-top: 1.5rem;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 7px;
+	letter-spacing: 1px;
+	font-style: italic;
+	font-size: 2.0rem;
+	text-transform: capitalize;
+}
+.head{
+	text-transform: uppercase;
+	text-align: center;
+	padding: 4px 15px 0;
+	margin: 0%;
+	font-size: 4.5rem;
+	font-weight: bold;
+	display: inline-block;
+	border-width: 1px 0;
+	border-style: solid;
+}
+/* about us*/
+.about{
+	padding: 3rem;
+	width: 100%;
+	height: 100%;
+	background-color:rgb(238, 227, 198);
+	display: flex;
+	gap: 1.5rem;
+	flex-direction: column;
+}
+.about .row .writeup{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.about .row .writeup .content{
+	margin-left: 1.5rem;
+	background-color: rgba(187, 151, 98, 0.568);
+	width: 50%;
+	padding: 5rem;
+	color: #fff;
+	text-align: center;
+	border-radius: 1.7rem;
+}
+.about .row .writeup .content h3{
+	font-size: 4rem;
+	color: #fff;
+	padding: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-width: 1px 0;
+	text-decoration: underline;
+}
+.about .row .writeup .content p{
+	text-align: start;
+	font-size: 1.8rem;
+	color: var(--red);
+	padding: 1.5rem;
+	text-transform: capitalize;
+}
+.about .row .writeup img{
+	width: 500px;
+	height: 500px;
+}
+/* parallax*/
+.parallax{
+	padding-top: 10rem;
+	display: flex;
+	height: 75vh;
+	width: 100%;
+	overflow: hidden;
+	background-image: url(images/food/neky6.png);
+	background-position:  center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	justify-content: center;
+	align-items: flex-start;
+}
+.parallax .heading h3{
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-style: italic;
+	background-color: rgba(255, 255, 255, 0.438);
+	color: black;
+	font-weight: 700;
+	padding: 1.5rem;
+	border-radius: 0 2rem 0 2rem;
+	margin-left: -100px;
+}
+.parallax .heading .btn a{
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	display: inline-block;
+	margin-left: -200px;
+	text-decoration: none;
+	padding: 1rem;
+	border-radius: 5rem;
+	color: floralwhite;
+	background-color: var(--red);
+}
+
+/* popular */
+
+.popular .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5.5rem;
+}
+.popular .box-container .box{
+	flex: 1 1 40rem;
+	padding: 2rem;
+	position: relative;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	border: 0.1rem solid rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+.popular .box-container .box img{
+	height: 25rem;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+.popular .box-container .box .price{
+	position: absolute;
+	top: 3rem;
+	left: 3rem;
+	color: #fff;
+	border-radius: 0.5rem;
+	background: var(--red);
+	font-size: 2rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+}
+.popular .box-container .box h3{
+	color: black;
+	font-size: 2.5rem;
+	padding-top: 1.5rem;
+	text-transform: capitalize;
+}
+.popular .box-container .box .stars i{
+	color: #f3a618;
+	font-size: 1.5rem;
+	padding: 0.2rem 0;
+}
+.popular .btn{
+	display: inline-block;
+	padding: 0.8rem 3rem;
+	border: 0.2rem solid var(--red);
+	color: var(--red);
+	cursor: pointer;
+	font-size: 1.7rem;
+	border-radius: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	margin-top: 1rem;
+}
+.popular .btn:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: var(--red);
+	transition: all 0.3s linear;
+	z-index: -1;
+}
+.popular .btn:hover::before{
+	width: 100%;
+	left: 0;
+}
+.popular .btn:hover{
+	color: #fff;
+	
+}
+
+/* gallery*/
+.gallery{
+	background-color: rgb(238, 227, 198);
+}
+.gallery h1{
+	color: black;
+	font-size: 4.5rem;
+	text-align: center;
+	font-weight: bold;
+	padding: 3rem;
+	text-transform: capitalize;
+}
+.gallery span{
+	color: red;
+}
+.gallery img{
+	height: 400px;
+	width: 400px;
+}
+.gallery .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+.gallery .box-container .box{
+	height: 30rem;
+	flex: 1 1 40rem;
+	border: 1rem solid rgb(15, 7, 0);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.gallery .box-container .box img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.gallery .box-container .box .content{
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 2rem;
+	padding-top: 7rem;
+	text-align: center;
+}
+.gallery .box-container .box .content h3{
+	font-size: 2.5rem;
+	color: black;
+	font-weight: bold;
+	padding-top: 7rem;
+}
+.gallery .box-container .box .content {
+	font-size: 1.8rem;
+	color: #333;
+	padding: 1rem;
+}
+.gallery .box-container .box:hover .content{
+	top: 0;
+}
+.gallery .btn{
+	display: inline-block;
+	padding: 0.8rem 3rem;
+	border: 0.2rem solid var(--red);
+	color: var(--red);
+	cursor: pointer;
+	font-size: 1.7rem;
+	border-radius: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	margin-top: 1rem;
+}
+.gallery .btn:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: var(--red);
+	transition: all 0.3s linear;
+	z-index: -1;
+}
+.gallery .btn:hover::before{
+	width: 100%;
+	left: 0;
+}
+.gallery .btn:hover{
+	color: #fff;
+	
+}
+
+/*order*/
+.success{
+	background-color: rgba(255, 0, 0, 0.932);
+	animation: status 4s ease forwards;
+}
+.error{
+	background-color: green;
+	color: #fff;
+	animation: status 4s ease forwards;
+}
+.order .row{
+	padding: 2rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	background: #fff;
+	display: flex;
+	flex: wrap;
+	gap: 1.5rem;
+	position: relative;
+	border-radius: 0.5rem;
+}
+.order .row .image{
+	flex: 1 1 40rem;
+}
+.order .row .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+.order .row form{
+	flex: 1 1 50rem;
+	padding: 1rem;
+}
+.order .row form .inputBox{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.order .row form .inputBox input, .order .row form textarea{
+	padding: 1rem;
+	margin: 1rem 0;
+	font-size: 1.7rem;
+	color: #333;
+	text-transform: none;
+	border: 0.1rem solid rgba(0, 0, 0, 0.3);
+	border-radius: 0.5rem;
+	width: 49%;
+}
+.order{
+	background-color: rgb(15, 7, 0);
+	margin-top: 0.4rem;
+}
+.order .row form textarea{
+	width: 100%;
+	resize: none;
+	height: 15rem;
+	
+}
+.order .row form .btn{
+	background: none;
+	
+}
+
+.order .row form .btn:hover{
+	background: var(--red);
+}
+.order .btn{
+	display: inline-block;
+	padding: 0.8rem 3rem;
+	border: 0.2rem solid var(--red);
+	color: var(--red);
+	cursor: pointer;
+	font-size: 1.7rem;
+	border-radius: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	margin-top: 1rem;
+}
+.order .btn:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: var(--red);
+	transition: all 0.3s linear;
+	z-index: -1;
+}
+.order .btn:hover::before{
+	width: 100%;
+	left: 0;
+}
+.order .btn:hover{
+	color: #fff;
+	
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer{
+	background-color: #fff;
+	text-align: center;
+}
+.footer .share{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+}
+.footer .credit{
+	padding: 2rem 1rem;
+	color: black;
+	font-weight: normal;
+}
+.footer .credit span{
+	color: #e56408;
+}
+.footer .btn{
+	display: inline-block;
+	padding: 0.8rem 3rem;
+	border: 0.2rem solid var(--red);
+	color: var(--red);
+	cursor: pointer;
+	font-size: 1.7rem;
+	border-radius: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	margin-top: 1rem;
+}
+.footer .btn:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: var(--red);
+	transition: all 0.3s linear;
+	z-index: -1;
+}
+.footer .btn:hover::before{
+	width: 100%;
+	left: 0;
+}
+.footer .btn:hover{
+	color: #fff;
+	
+}
+#scroll-top{
+	position: fixed;
+	top: -120%;
+	right: 2rem;
+	padding: 0.5rem 1.5rem;
+	font-size: 4rem;
+	background: var(--red);
+	color: #fff;
+	border-radius: 0.5rem;
+	transition: 0.5s linear;
+	z-index: 1000;
+	
+}
+#scroll-top.active{
+	top: calc(100% - 12rem);
+}
+#preloader{
+	position: fixed;
+	z-index: 100;
+	background: #fff url('images/food/Food Loader - GIF Animation.gif') no-repeat center center;
+	display: flex; 
+	height: 100vh;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+	#menu-bar{
+		display: initial;
+	}
+	header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #f7f7f7;
+		border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+		clip-path: polygon(0 0, 100% 0, 0 0);
+	}
+	header .navbar.active{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	header .navbar a{
+		margin: 1.5rem;
+		padding: 1.5rem;
+		display:  block;
+		border: 0.2rem solid rgba(0, 0, 0, 0.1);
+		border-left: 0.5rem solid var(--red);
+		background: #fff;
+	
+	}
+	.parallax .btn a{
+		margin-left: -500px;
+	}
+}
+@media(max-width: 450px){
+	html{
+		font-size: 50%;
+	}
+}
+@keyframes status{
+	0%{
+		opacity: 1;
+		pointer-events: all;
+	}
+	90%{
+		opacity: 1;
+		pointer-events: all;
+	}
+	100%{
+		opacity: 0;
+		pointer-events: none;
+	}
+}
